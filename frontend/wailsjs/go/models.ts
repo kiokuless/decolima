@@ -1,11 +1,11 @@
 export namespace limautil {
 	
-	export class  {
+	export class NetWork {
 	    vnl?: string;
 	    interface?: string;
 	
 	    static createFrom(source: any = {}) {
-	        return new (source);
+	        return new NetWork(source);
 	    }
 	
 	    constructor(source: any = {}) {
@@ -22,7 +22,7 @@ export namespace limautil {
 	    memory?: number;
 	    disk?: number;
 	    dir?: string;
-	    network?: [];
+	    network?: NetWork[];
 	    address?: string;
 	    runtime?: string;
 	
@@ -39,7 +39,7 @@ export namespace limautil {
 	        this.memory = source["memory"];
 	        this.disk = source["disk"];
 	        this.dir = source["dir"];
-	        this.network = this.convertValues(source["network"], );
+	        this.network = this.convertValues(source["network"], NetWork);
 	        this.address = source["address"];
 	        this.runtime = source["runtime"];
 	    }

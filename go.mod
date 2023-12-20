@@ -1,4 +1,4 @@
-module changeme
+module github.com/kiokuless/decolima
 
 go 1.21
 
@@ -42,3 +42,5 @@ require (
 	golang.org/x/text v0.13.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/abiosoft/colima => github.com/kiokuless/colima v0.0.0-20231220142747-d6f42fe326ac
